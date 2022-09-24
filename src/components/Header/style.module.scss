@@ -1,0 +1,35 @@
+@import "../../styles/variables";
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50px;
+  background-color: $primary_color;
+  font-family: $primary_font;
+  border-bottom: $second_color solid 5px;
+  a {
+    color: $second_color;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .menuUL {
+      display: flex;
+      width: 100%;
+      gap: 50px;
+      li {
+        width: 60px;
+        text-align: center;
+        list-style: none;
+        padding: 3px;
+        &:hover {
+          background-color: #eee;
+          color: $primary_color;
+          border-radius: 5px;
+          transition: 0.7s;
+        }
+      }
+    }
+  }
+}

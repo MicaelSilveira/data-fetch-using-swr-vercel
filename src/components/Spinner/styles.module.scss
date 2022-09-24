@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  z-index: 2000;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  .loader {
+    animation: rotating 1s infinite;
+    width: 40px;
+    height: 40px;
+    border: solid black 3px;
+    border-top-color: #555;
+    border-radius: 50%;
+  }
+}
+
+@keyframes rotating {
+  to {
+    transform: rotate(1turn);
+  }
+}

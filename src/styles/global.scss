@@ -1,0 +1,18 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+a {
+  text-decoration: none;
+}
+@keyframes animeLeft {
+  to {
+    opacity: initial;
+    transform: initial;
+  }
+}
+.animeLeft {
+  opacity: 0;
+  transform: rotateZ(1deg);
+  animation: animeLeft 0.5s forwards;
+}

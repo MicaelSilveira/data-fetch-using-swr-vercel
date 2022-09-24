@@ -1,0 +1,24 @@
+@import "../../styles/variables";
+.UserList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+  .userUL {
+    display: flex;
+    gap: 10px;
+    color: red;
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px;
+      list-style: none;
+      &:hover {
+        background-color: $primary_color;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+  }
+}
